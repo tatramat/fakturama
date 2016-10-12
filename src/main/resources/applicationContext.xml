@@ -6,7 +6,7 @@
 
     <context:property-placeholder location="classpath:app.properties"/>
 
-    <context:component-scan base-package="cz.fakturama.idoklad"/>
+    <context:component-scan base-package="cz.fakturama"/>
 
 
 </beans>

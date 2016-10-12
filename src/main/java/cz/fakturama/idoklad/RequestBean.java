@@ -33,6 +33,9 @@ public class RequestBean {
         HttpGet request = new HttpGet(url + endpoint);
         request.addHeader("X-App", APP_NAME);
         request.addHeader("X-App-Version", APP_VERSION);
+        if (authToken != null) {
+            request.addHeader("SecureToken", authToken);
+        }
         return request;
     }
 

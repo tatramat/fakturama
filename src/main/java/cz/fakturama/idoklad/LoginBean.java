@@ -43,7 +43,7 @@ public class LoginBean {
             e.printStackTrace();
         }
         if (result != null && result.toString().trim().length() > 0) {
-            requester.setAuthToken(result.toString());
+            requester.setAuthToken(result.toString().replaceAll("\"", ""));
         }
     }
 
